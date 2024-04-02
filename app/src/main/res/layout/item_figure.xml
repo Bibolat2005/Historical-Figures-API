@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/figureName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Julius Caesar"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/figureTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Title"
+            android:textColor="@color/mycolor"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/figureBorn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Born"
+            android:textSize="14sp"
+            android:textColor="@color/mycolor"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/figureDied"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Died"
+            android:textSize="14sp"
+            android:textColor="@color/mycolor"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/figureSpouses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spouses"
+            android:textSize="14sp"
+            android:textColor="@color/mycolor"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/figureChildren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Children"
+            android:textSize="14sp"
+            android:textColor="@color/mycolor"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/figurePartners"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Partners"
+            android:textSize="14sp"
+            android:textColor="@color/mycolor"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/figureConflicts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conflicts"
+            android:textSize="14sp"
+            android:textColor="@color/mycolor"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/figureOccupation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Occupation"
+            android:textSize="14sp"
+            android:textColor="@color/mycolor"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/figureNotableWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NotableWork"
+            android:textSize="14sp"
+            android:textColor="@color/mycolor"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
