@@ -15,12 +15,12 @@ class FigureAdapter(private val figures: List<FigureApi>) :
         val figureTitle: TextView = binding.figureTitle
         val figureBorn: TextView = binding.figureBorn
         val figureDied: TextView = binding.figureDied
-        val figureSpouses: TextView = binding.figureSpouses
-        val figureChildren: TextView = binding.figureChildren
-        val figurePartners: TextView = binding.figurePartners
-        val figureConflicts: TextView = binding.figureConflicts
-        val figureOccupation: TextView = binding.figureOccupation
-        val figureNotableWork: TextView = binding.figureNotableWork
+        val figureMother: TextView = binding.figureMother
+        val figureFather: TextView = binding.figureFather
+//        val figurePartners: TextView = binding.figurePartners
+//        val figureConflicts: TextView = binding.figureConflicts
+//        val figureOccupation: TextView = binding.figureOccupation
+//        val figureNotableWork: TextView = binding.figureNotableWork
 
         fun bind(figure: FigureApi) {
             figureName.text = "Name: ${figure.name}"
@@ -29,12 +29,14 @@ class FigureAdapter(private val figures: List<FigureApi>) :
             figure.info?.let { info ->
                 figureBorn.text = "Born: ${info.born}"
                 figureDied.text = "Died: ${info.died}"
-                figureSpouses.text = "Spouses: ${info.spouses.toString()}"
-                figureChildren.text = "Children: ${info.children.toString()}"
-                figurePartners.text = "Partners: ${info.partners.toString()}"
-                figureConflicts.text = "Conflicts: ${info.conflicts.toString()}"
-                figureOccupation.text = "Occupation: ${info.occupation.toString()}"
-                figureNotableWork.text = "Notable Work: ${info.notableWork.toString()}"
+                figureMother.text="Mother: ${info.mother}"
+                figureFather.text="Father: ${info.father}"
+//                figureSpouses.text = "Spouses: ${info.spouses.toString()}"
+//                figureChildren.text = "Children: ${info.children.toString()}"
+//                figurePartners.text = "Partners: ${info.partners.toString()}"
+//                figureConflicts.text = "Conflicts: ${info.conflicts.toString()}"
+//                figureOccupation.text = "Occupation: ${info.occupation.toString()}"
+//                figureNotableWork.text = "Notable Work: ${info.notableWork.toString()}"
             }
         }
     }

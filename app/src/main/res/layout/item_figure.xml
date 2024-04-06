@@ -49,58 +49,58 @@
             android:layout_marginTop="8dp"/>
 
         <TextView
-            android:id="@+id/figureSpouses"
+            android:id="@+id/figureMother"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Spouses"
+            android:text="Mother"
             android:textSize="14sp"
             android:textColor="@color/mycolor"
             android:layout_marginTop="8dp"/>
 
         <TextView
-            android:id="@+id/figureChildren"
+            android:id="@+id/figureFather"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Children"
+            android:text="Father"
             android:textSize="14sp"
             android:textColor="@color/mycolor"
             android:layout_marginTop="8dp"/>
 
-        <TextView
-            android:id="@+id/figurePartners"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Partners"
-            android:textSize="14sp"
-            android:textColor="@color/mycolor"
-            android:layout_marginTop="8dp"/>
+<!--        <TextView-->
+<!--            android:id="@+id/figurePartners"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Partners"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textColor="@color/mycolor"-->
+<!--            android:layout_marginTop="8dp"/>-->
 
-        <TextView
-            android:id="@+id/figureConflicts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Conflicts"
-            android:textSize="14sp"
-            android:textColor="@color/mycolor"
-            android:layout_marginTop="8dp"/>
+<!--        <TextView-->
+<!--            android:id="@+id/figureConflicts"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Conflicts"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textColor="@color/mycolor"-->
+<!--            android:layout_marginTop="8dp"/>-->
 
-        <TextView
-            android:id="@+id/figureOccupation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Occupation"
-            android:textSize="14sp"
-            android:textColor="@color/mycolor"
-            android:layout_marginTop="8dp"/>
+<!--        <TextView-->
+<!--            android:id="@+id/figureOccupation"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Occupation"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textColor="@color/mycolor"-->
+<!--            android:layout_marginTop="8dp"/>-->
 
-        <TextView
-            android:id="@+id/figureNotableWork"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NotableWork"
-            android:textSize="14sp"
-            android:textColor="@color/mycolor"
-            android:layout_marginTop="8dp"/>
+<!--        <TextView-->
+<!--            android:id="@+id/figureNotableWork"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="NotableWork"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textColor="@color/mycolor"-->
+<!--            android:layout_marginTop="8dp"/>-->
 
     </LinearLayout>
 
