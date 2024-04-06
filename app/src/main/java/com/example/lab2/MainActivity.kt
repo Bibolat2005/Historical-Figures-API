@@ -41,10 +41,10 @@ class MainActivity : AppCompatActivity() {
                         val figures = response.body()
                         if (figures != null && figures.isNotEmpty()) {
                             println("HTTP ${response.body()}")
-                            val adapter = FigureAdapter(figures)
+                            val adapter = FigureAdapter()
                             recyclerView.adapter = adapter
+                            adapter.submitList(figures)
                         } else {
-                            // Обработка пустого массива или некорректного формата ответа
                             println("HTTP Response body is empty or invalid")
                         }
                     } else {
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
 
                 override fun onFailure(call: Call<List<FigureApi>>, t: Throwable) {
                     Toast.makeText(this@MainActivity, "HTTP FAIL: ${t.message}", Toast.LENGTH_LONG).show()
-                    println("HTTPO Failed to get historical figures: ${t.message}")
+                    println("HTTP Failed to get historical figures: ${t.message}")
                 }
             })
         }
@@ -65,5 +65,4 @@ class MainActivity : AppCompatActivity() {
     override fun onBackPressed() {
         super.onBackPressed()
     }
-    /// Api is working partially
 }

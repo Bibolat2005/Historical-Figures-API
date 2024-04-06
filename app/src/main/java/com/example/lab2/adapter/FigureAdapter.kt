@@ -3,12 +3,12 @@ package com.example.lab2.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lab2.databinding.ItemFigureBinding
 import com.example.lab2.model.FigureApi
 
-class FigureAdapter(private val figures: List<FigureApi>) :
-    RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class FigureAdapter : ListAdapter<FigureApi, FigureAdapter.FigureViewHolder>(FigureDiffUtil()) {
 
     inner class FigureViewHolder(private val binding: ItemFigureBinding) : RecyclerView.ViewHolder(binding.root) {
         val figureName: TextView = binding.figureName
@@ -42,17 +42,15 @@ class FigureAdapter(private val figures: List<FigureApi>) :
     }
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FigureAdapter.FigureViewHolder {
         val binding = ItemFigureBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return FigureViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        val figure = figures[position]
-        if (holder is FigureViewHolder) {
-            holder.bind(figure)
-        }
+    override fun onBindViewHolder(holder: FigureViewHolder, position: Int) {
+        val figure = getItem(position)
+        holder.bind(figure)
     }
 
-    override fun getItemCount() = figures.size
+//    override fun getItemCount() = figures.size
 }
